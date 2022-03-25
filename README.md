@@ -1,5 +1,4 @@
-# AnalizadorLexico_LP_1800
-Tarea   
+# AnalizadorLexico_LP_1800     
 DESCRIPCION:  
 
 PARTICIPANTES:  

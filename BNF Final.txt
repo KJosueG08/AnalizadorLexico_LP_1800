@@ -29,12 +29,12 @@
 <cons_cadena> ::= <identificador> := <cadena>
 <cons_real> ::= <identificador> := <num_entero>
 <cons_logica> ::= <identificador> := <valor_logico>
-<comparacion> ::= <expresion> <operador_comparacion> <expresion>
+<comparacion> ::= <expresion> <op_comparacion> <expresion>
 <valor_logico> ::= "Verdadero" | "Falso"
 <cadena> ::= <Caracter> | <cadena> <Caracter> | <cadena> <digito>
 <identificador> ::= <Caracter> | <identificador> <Caracter> | <identificador> <digito>
 <op_logica> ::= <expresion> <op_logico> <expresion>
-<num_entero> ::= <num_entero> | <Signo><Numero> |  <num_natural>
+<num_entero> ::= <num_entero> | <Signo><numero> |  <num_natural>
 <num_natural> ::= <digito> | <num_natural> <digito>
 <valor> ::= <identificador> := <expresion>
 <op_comparacion> ::= "=="|"<>"|"<="|">="|"<"|">"
@@ -42,6 +42,7 @@
 <tipo> ::= "Entero"|"Cadena"|"Booleano"|"Caracter"
 <Caracter> ::- "a"|"b"|"c"|"d"|"e"|"f"|"g"|"h"|"i"|"j"|"k"|"l"|"m"|"n"|"o"|"p"|"q"|"r"|"s"|"t"|"u"|"v"|"w"|"x"|"y"|"z"|"A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"W"|"X"|"Y"|"Z" 
 <operador> ::= "+" |"-"|"/"|"*"|"^"|"%"
+<numero>::= <digito> | <numero><digito>
 <digito> ::= "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
 <signo> ::= "+"|"-"
 

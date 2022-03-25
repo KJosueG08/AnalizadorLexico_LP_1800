@@ -1,0 +1,49 @@
+
+<Programa> ::= "inicioPrograma"<fun_principal> <funcion> | <Programa> <funcion> "finprograma"
+<fun_principal> ::= <declaraciones> 
+                        "AlgoritmoPrincipal" "(" ")" "{" <llamada_funcion> "}" "FinAlgoritmo"
+<funcion> ::= <identificador> "(" ")" "{"
+                <sentencias>  "}"
+<declaraciones> ::= <tipo> <identificadores> ";" | <tipo> <identificador> "=" <expresion> ";" | <declaraciones> <tipo> <identificadores> ";" | <tipo> <identificador> "=" <expresion> ";"
+<identificadores> ::= <identificador> | <identificador> "," <identificadores>
+<sentencias> ::= <asignacion> | <condicion>| <bucles> | <entrada> | <salida> | <casos> | <expresion> ","| <sentencias> 
+<llamados> ::= <identificador> "(" ")" ";"
+<llamada> ::= <valor> | <llamada> "," <valor>
+<asignacion> ::= <identificador> "=" <expresion> ";"
+<bucles> ::= <para> | <mientras> | <hacer_mientras>
+<para> ::= "Para" "(" <iniciar_para> ";" <expresion> ";" <in_para> ")"
+                    "{"  <sentencias> "}" "Final_Para"
+<mientras> ::= "Mientras" "(" <expresion> ")" "{" <sentencias> "}" "Final_Mientras"
+<hacer_mientras> ::= "Hacer" "{" <sentencias> "}" "Mientras" "(" <expresion> ")" ";"
+<condicion> ::= <Booleano> 
+<Booleano> ::= <V> | <F>    
+<entrada> ::= "Entrada" <expresion> ";"
+<salida> ::= "Salida" <valor_identificador> ";"
+<iniciar_para> ::= "Entero" <identificador> "=" <num_entero>
+<in_para> ::= <identificador> <autoincrementable> | <expresion>
+<autoincrementable> ::= "--" |"++" 
+<expresion> ::= <enlazar> | <op_aritmetica> | <op_logica> | <identificador> | <constante> | <valor> | <comparacion> | <expresion> | <cadena> | <num_entero> | <entrada>
+<enlazar> ::= <cadena> "+" <cadena> | <enlazar> "+" <cadena>
+<op_aritmetica> ::= <num_entero> <operador> <num_entero> | <op_aritmetica> <operador> <num_entero> | <op_aritmetica> <operador> <op_aritmetica>
+<constante> ::= <cons_cadena> | <cons_real> | <cons_logica>
+<cons_cadena> ::= <identificador> := <cadena>
+<cons_real> ::= <identificador> := <num_entero>
+<cons_logica> ::= <identificador> := <valor_logico>
+<comparacion> ::= <expresion> <operador_comparacion> <expresion>
+<valor_logico> ::= "Verdadero" | "Falso"
+<cadena> ::= <Caracter> | <cadena> <Caracter> | <cadena> <digito>
+<identificador> ::= <Caracter> | <identificador> <Caracter> | <identificador> <digito>
+<op_logica> ::= <expresion> <op_logico> <expresion>
+<num_entero> ::= <num_entero> | <Signo><Numero> |  <num_natural>
+<num_natural> ::= <digito> | <num_natural> <digito>
+<valor> ::= <identificador> := <expresion>
+<op_comparacion> ::= "=="|"<>"|"<="|">="|"<"|">"
+<op_logico> ::= "||"|"&&" 
+<tipo> ::= "Entero"|"Cadena"|"Booleano"|"Caracter"
+<Caracter> ::- "a"|"b"|"c"|"d"|"e"|"f"|"g"|"h"|"i"|"j"|"k"|"l"|"m"|"n"|"o"|"p"|"q"|"r"|"s"|"t"|"u"|"v"|"w"|"x"|"y"|"z"|"A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"W"|"X"|"Y"|"Z" 
+<operador> ::= "+" |"-"|"/"|"*"|"^"|"%"
+<digito> ::= "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
+<signo> ::= "+"|"-"
+
+
+

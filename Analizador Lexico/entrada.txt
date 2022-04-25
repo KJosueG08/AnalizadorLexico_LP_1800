@@ -1,37 +1,42 @@
-Entero a, b, resultadoop_aritmeticaS, resultadoop_aritmeticaR ,resultadoop_aritmeticaM
-Cadena C1 ;
-Cadena C2 = "Lenguajes" ;
-Cadena CR;
+inicio;
+entero A, B, Resultadoop_aritmeticaS, Resultadoop_aritmeticaR ,Resultadoop_aritmeticaM;
+cadena C1 ;
+cadena C2 = true ;
+cadena CR;
 
-FuncionPrincipal(){
-	op_aritmetica();
-	enlazar()
+Funcionprincipal(){
+	Op_aritmetica();
+	Enlazar()
 }
 
-funcion op_aritmetica(){
-	a = 2;
-	b = 3;
-	casos(a,b){
-		caso suma:
-			resultadoop_aritmeticaS = a + b;
+Funcion_op_aritmetica(){
+	A = 2;
+	B = 3;
+	casos(A,B){
+		Caso_suma:
+			Resultadoop_aritmeticaS = A + B;
 			
-		caso resta:
-			resultadoop_aritmeticaR =  a - b;
+		Caso_resta:
+			Resultadoop_aritmeticaR =  A - B;
 			
-		caso multiplicar:
-			resultadoop_aritmeticaM = resultadoop_aritmeticaS * resultadoop_aritmeticaR;
+		Caso_multiplicar:
+			Resultadoop_aritmeticaM = Resultadoop_aritmeticaS * Resultadoop_aritmeticaR;
 		
-		casoDefecto:
-			mostrar " error 504 "
-	fin casos	
+		Caso_Defecto:
+			Mostrar= "Error504";
 
-	}
-}finfuncion
-
-
-funcion enlazar(){
-	entrada C1;
-	CR = C1 + C2;
-	mostrar CR;
+	fincasos
 	
-}finfuncion
+}
+
+}
+
+
+Funcion_enlazar(){
+	Entrada C1;
+	CR = C1 + C2;
+	Mostrar CR;
+
+finfuncion
+}
+fin;

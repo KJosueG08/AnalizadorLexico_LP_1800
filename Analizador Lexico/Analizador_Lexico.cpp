@@ -22,8 +22,6 @@ int contadorNumeros=0;
 int contadorPalabrasReservadas=0;
 int contadorSimbolos=0;
 int contadorSignos=0;
-//int contadorEncender=0;
-//int contadorApagado=0;
 int contadorCiclos=0;
 int contadorCondicional=0;
 

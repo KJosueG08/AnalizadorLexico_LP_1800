@@ -1,0 +1,54 @@
+inicio;
+entero A, B, Resultadoop_aritmeticaS, Resultadoop_aritmeticaR ,Resultadoop_aritmeticaM;
+cadena C1 ;
+boolean C2 = true ;
+cadena CR;
+
+Funcionprincipal(){
+	Op_aritmetica();
+	Enlazar()
+}
+
+Funcion_op_aritmetica(){
+	A = 2;
+	B = 3;
+	casos(A,B){
+		Caso_suma:
+			Resultadoop_aritmeticaS = A + B;
+			
+		Caso_resta:
+			Resultadoop_aritmeticaR =  A - B;
+			
+		Caso_multiplicar:
+			Resultadoop_aritmeticaM = Resultadoop_aritmeticaS * Resultadoop_aritmeticaR;
+		
+		Caso_Defecto:
+			Mostrar= "Error504";
+
+	fincasos
+	
+}
+
+}
+
+
+Funcion_enlazar(){
+	Entrada C1;
+	CR = C1 + C2;
+	Mostrar CR;
+
+repetir;   
+     mientras C1 < 7;
+            Contador + 1;
+     fin mientras;
+fin repetir;
+
+si C1 > C2;
+     C2 ++;
+sino;
+     C1--;
+fin si;
+
+finfuncion
+}
+fin;
